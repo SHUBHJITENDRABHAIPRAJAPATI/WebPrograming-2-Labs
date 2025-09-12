@@ -486,6 +486,8 @@ const listing0 = listings[0];
  * and currentOwner which is a string with the value of Jane Doe
  */
 //WRITE YOUR CODE BELOW
+const listing1 = { ...listings[0], isSold: false, currentOwner: "Jane Doe" };
+
 
 
 /**

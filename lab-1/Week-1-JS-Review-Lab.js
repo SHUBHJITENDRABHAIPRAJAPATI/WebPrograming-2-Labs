@@ -560,4 +560,8 @@ console.log(listingAddresses);
 
 
 
+//to be very honest I did take help from co-pilot for the last 3 tasks(4,6,7  only  because I was stuck and could not figure them out on my own)
+//I did the rest of the tasks on my own without any help from co-pilot
+
+
 

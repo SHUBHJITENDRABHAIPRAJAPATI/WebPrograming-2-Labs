@@ -516,6 +516,13 @@ console.log(`This house at ${listing1.address} is owned by ${listing1.currentOwn
  * USE TERNARIES INSTEAD OF IF/ELSE STATEMENTS!
  */
 //WRITE YOUR CODE BELOW
+function realtorFees(listing) {
+  const price = parseFloat(listing.price.replace(/[$,]/g, ''));
+  const feeRate = price <= 450000 ? 0.025 : 0.02;
+  const fees = price * feeRate;
+  return `$${fees.toFixed(2)}`;
+
+}
 
 
 
@@ -523,6 +530,12 @@ console.log(`This house at ${listing1.address} is owned by ${listing1.currentOwn
  * Task-5: Sort the listing array ascendingly in a new variable called listingAscendingly
  */
 //WRITE YOUR CODE BELOW
+const listingAscendingly = [...listings].sort((a, b) => {
+  const priceA = parseFloat(a.price.replace(/[$,]/g, ''));
+  const priceB = parseFloat(b.price.replace(/[$,]/g, ''));
+  return priceA - priceB;
+});
+
 
 
 /**
@@ -530,6 +543,10 @@ console.log(`This house at ${listing1.address} is owned by ${listing1.currentOwn
  * Name the variable newBuiltListings
  */
 //WRITE YOUR CODE BELOW
+const newBuiltListings = listings.filter(listing => {
+  const builtYear = parseInt(listing.propertySummary.builtIn.split(' ')[0]);
+  return !isNaN(builtYear) && builtYear >= 1990;
+});
 
 
 /**
@@ -537,5 +554,10 @@ console.log(`This house at ${listing1.address} is owned by ${listing1.currentOwn
  * that contains only the addresses of each listing
  */
 //WRITE YOUR CODE BELOW
+const listingAddresses = listings.map(listing => listing.address);
+console.log(listingAddresses);
+
+
+
 
 

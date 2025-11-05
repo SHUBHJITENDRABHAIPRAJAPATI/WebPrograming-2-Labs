@@ -1,0 +1,59 @@
+/* App styles */
+body {
+  font-family: Arial, sans-serif, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Helvetica, sans-serif;
+  background-color: darkgray;
+  font-size: large;
+  font-variant-position: sub;
+  margin: 5px;
+  padding: 5px;
+
+}
+h1 {
+  text-align: center;
+  color: #333;
+}
+h2 {
+  color: black;
+}
+
+.post-card {
+  background: lightgray;
+  border: 2px solid #333;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+.post-card h3{
+  margin-top: 0;
+  color: #222;
+}
+.post-card p {
+  color: #555;
+}
+.form-group {
+  margin-bottom: 10px;
+}
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+button {
+  padding: 10px 15px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #218838;
+  border-radius: 10px;
+  transform: scale(1.05);
+  
+}

@@ -7,8 +7,9 @@ import PostsContainer from "./PostsContainer";
 //Also Used setdata, setloading, setnewpost states to avoid unnecessary re-renders.
 export default function FakeApiApp() {
   const [data, setData] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [newPost, setNewPost] = useState({
+  const [loading, setLoading] = useState(true);//loading state to show loading message while fetching data
+  //state to hold new post data from the form
+  const [newPost, setNewPost] = useState({ 
     title: "",
     body: "",
   });
